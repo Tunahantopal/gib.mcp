@@ -1,0 +1,19 @@
+[project]
+name = "gib-ozelge-mcp"
+version = "0.1.0"
+description = "Gelir İdaresi Başkanlığı özelgelerini arayan ve okuyan MCP sunucusu"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+gib-ozelge-mcp = "gib_ozelge.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["gib_ozelge"]
